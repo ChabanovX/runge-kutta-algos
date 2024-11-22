@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+\section*{Practical Tasks}
+
+\subsection*{Task 1}
+
+Write a computer program that solves:
+
+\[
+\begin{aligned}
+    & a) \quad y' = x + \cos y, \quad y(1) = 30, \quad 1 \leq x \leq 2, \\
+    & b) \quad y' = x^2 + y^2, \quad y(2) = 1, \quad 1 \leq x \leq 2.
+\end{aligned}
+\]
+
+Implement in the code numerical Runge-Kutta explicit methods of 2nd and 4th order with grid steps:
+\( h = 0.1, 0.05, 0.01, 0.005, 0.001 \).
+
+For each numerical method, compose the four arrays of the relative errors for the numbers \( N = 20, 100, 200, 1000 \) in the same \( x \) coordinates:
+
+\[
+\begin{aligned}
+    & N = 20: \quad |x_k(n_{20}) - x_k(n_{10})|, \quad k = 1, 10, \\
+    & N = 100: \quad |x_k(n_{100}) - x_k(n_{20})|, \quad k = 1, 10, \\
+    & N = 200: \quad |x_k(n_{200}) - x_k(n_{100})|, \quad k = 1, 10, \\
+    & N = 1000: \quad |x_k(n_{1000}) - x_k(n_{200})|, \quad k = 1, 10.
+\end{aligned}
+\]
+
+Provide the functionality of printing the arrays of the relative errors onto the console in the format:
+
+\begin{itemize}
+    \item In the first line, print the title of the array (e.g., ``N\_20'').
+    \item In the second line, print the values stored in the array, separated by spaces, without the space after the last item.
+\end{itemize}
+
+For each numerical method, compose the array of the absolute errors:
+
+\[
+\text{Absolute Errors} =
+\max_{k=1,10}
+\begin{cases}
+    |x_k(n_{20}) - x_k(n_{10})|, & N = 20 \\
+    |x_k(n_{100}) - x_k(n_{20})|, & N = 100 \\
+    |x_k(n_{200}) - x_k(n_{100})|, & N = 200 \\
+    |x_k(n_{1000}) - x_k(n_{200})|, & N = 1000.
+\end{cases}
+\]
+
+Provide the functionality of plotting \(\log_2\) for the absolute errors of both methods together in one picture.
+
+\subsection*{Task 2}
+
+Write a computer program that solves:
+
+\[
+y'' = y \sin x, \quad y(0) = 0, \quad y'(0) = 1, \quad 0 \leq x \leq 1.
+\]
+
+Implement in the code numerical Runge-Kutta explicit methods of 2nd and 4th order with grid steps:
+\( h = 0.1, 0.05, 0.01, 0.005, 0.001 \).
+
+For each numerical method, compose the four arrays of the relative errors for the numbers \( N = 20, 100, 200, 1000 \) in the same \( x \) coordinates:
+
+\[
+\begin{aligned}
+    & N = 20: \quad |x_k(n_{20}) - x_k(n_{10})|, \quad k = 1, 10, \\
+    & N = 100: \quad |x_k(n_{100}) - x_k(n_{20})|, \quad k = 1, 10, \\
+    & N = 200: \quad |x_k(n_{200}) - x_k(n_{100})|, \quad k = 1, 10, \\
+    & N = 1000: \quad |x_k(n_{1000}) - x_k(n_{200})|, \quad k = 1, 10.
+\end{aligned}
+\]
+
+Provide the functionality of printing the arrays of the relative errors onto the console in the format:
+
+\begin{itemize}
+    \item In the first line, print the title of the array (e.g., ``N\_20'').
+    \item In the second line, print the values stored in the array, separated by spaces, without the space after the last item.
+\end{itemize}
+
+For each numerical method, compose the array of the absolute errors:
+
+\[
+\text{Absolute Errors} =
+\max_{k=1,10}
+\begin{cases}
+    |x_k(n_{20}) - x_k(n_{10})|, & N = 20 \\
+    |x_k(n_{100}) - x_k(n_{20})|, & N = 100 \\
+    |x_k(n_{200}) - x_k(n_{100})|, & N = 200 \\
+    |x_k(n_{1000}) - x_k(n_{200})|, & N = 1000.
+\end{cases}
+\]
+
+Provide the functionality of plotting \(\log_2\) for the absolute errors of both methods together in one picture.
+
+\end{document}
+``` 
+
+Let me know if you need any further customization or additions!
