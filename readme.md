@@ -51,7 +51,7 @@ This project provides Python implementations to numerically solve two ordinary d
     ```bash
     pip install numpy matplotlib
     ```
-
+    
 ### Usage
 
 1. **Run the Python Script:**
@@ -61,11 +61,6 @@ This project provides Python implementations to numerically solve two ordinary d
 2. **Output:**
     - **Console Output:** Displays arrays of relative errors for each numerical method and task.
     - **Plots:** Shows \(\log_2\) of absolute errors for RK2 and RK4 methods in separate figures for Task 1 and Task 2.
-
-### File Structure
-
-- `runge_kutta_solver.py`: Main Python script containing implementations for both tasks.
-- `README.md`: This README file.
 
 ### Example Output
 
@@ -91,7 +86,3 @@ N_20:
 - **Customization:** You can modify the grid steps, ODEs, and initial conditions directly in the `runge_kutta_solver.py` script as needed.
 - **Performance:** For very large \( N \), execution time may increase. Ensure adequate computational resources are available.
 - **Extensibility:** The code is modular, allowing for easy addition of higher-order Runge-Kutta methods or additional ODEs.
-
-### Contact
-
-For any questions or suggestions, please contact [your.email@example.com](mailto:your.email@example.com).
